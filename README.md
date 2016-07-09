@@ -1,4 +1,4 @@
-# aspect-tagger
+# aspectTagger
 A short script to tag square and panoramic images.
 ### Synopsis
 A bash script that tags square and panoramic images. Easily find Instagram photos, profile pictures, color/bump/normal/etc. maps, tiling textures, panoramic vacation photos and more. Once images are tagged, set even more specific tags like ‘instagram’ or ‘specular maps’ to make searching a breeze!
@@ -28,3 +28,6 @@ Finder can filter by portrait or landscape orientation, but panoramic and square
 <li>In Terminal, navigate to where you’ve downloaded the scripts
 <li>Install <a href="https://github.com/jdberry/tag">tag</a> using your preferred method
 </ol>
+
+### Requirements
+OSX Mavericks 10.9 or higher
