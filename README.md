@@ -1,7 +1,7 @@
 # aspectTagger
-A short script to tag square and panoramic images.
+A bash script that tags square and panoramic images.
 ### Synopsis
-A bash script that tags square and panoramic images. Easily find Instagram photos, profile pictures, color/bump/normal/etc. maps, tiling textures, panoramic vacation photos and more. Once images are tagged, set even more specific tags like ‘instagram’ or ‘specular maps’ to make searching a breeze!
+Easily find Instagram photos, profile pictures, color/bump/normal/etc. maps, tiling textures, panoramic vacation photos and more. Once images are tagged, set even more specific tags like ‘instagram’ or ‘specular maps’ to make searching a breeze!
 
 ### Code Example
 Run for home directory (the default root): 
@@ -19,7 +19,9 @@ Finder can filter by portrait or landscape orientation, but panoramic and square
 <li>I wanted to exclude the system files contained in my Library folder
 <li>There’s no way to exclude icons and small UI elements
 <li>I wanted to use multiprocessing to make tagging faster
+<li>It only works for square images.
 </ul>
+The mdfind command allows for extremely fast metadata searches, so it makes sense to take advantage of that and automate this process to save myself time. 
 
 ### Installation
 <ol>
@@ -30,4 +32,7 @@ Finder can filter by portrait or landscape orientation, but panoramic and square
 </ol>
 
 ### Requirements
-OSX Mavericks 10.9 or higher
+OSX Mavericks 10.9 or higher (tested on OSX Yosemite 10.10.5 and OSX Mavericks 10.9.5)
+
+### Contact
+Feel free 
