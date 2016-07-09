@@ -26,13 +26,13 @@ The mdfind command allows for extremely fast metadata searches, so it makes sens
 ### Installation
 <ol>
 <li>Download or clone aspectTagger.
-<li>Open Terminal (located at ~/Applications/Utilities/Terminal.app)
-<li>In Terminal, navigate to where you’ve downloaded the scripts
+<li>Open Terminal and navigate to where you’ve downloaded the scripts
+<li>You may need to run chmod u+x aspectTagger.sh
 <li>Install <a href="https://github.com/jdberry/tag">tag</a> using your preferred method
 </ol>
 
 ### Requirements
-OSX Mavericks 10.9 or higher (tested on OSX Yosemite 10.10.5 and OSX Mavericks 10.9.5)
+OSX Mavericks 10.9 or higher (tested on OSX Yosemite 10.10.5 and OSX Mavericks 10.9.5).
 
 ### Contact
-Feel free 
+Please feel free to let me know of any issues or suggestions at sm_zellner@msn.com.
