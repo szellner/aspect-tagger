@@ -27,7 +27,7 @@ The mdfind command allows for extremely fast metadata searches, so it makes sens
 <ol>
 <li>Download or clone aspectTagger.
 <li>Open Terminal and navigate to where you’ve downloaded the scripts
-<li>You may need to run chmod u+x aspectTagger.sh
+<li>You may need to run chmod u+x aspectTagger.sh tag.sh
 <li>Install <a href="https://github.com/jdberry/tag">tag</a> using your preferred method
 </ol>
 
