@@ -3,10 +3,12 @@ Tag square and panoramic images to easily find Instagram photos, profile picture
 
 ### Synopsis
 aspectTagger - A bash script to tag square and panoramic images. 
-  usage:
-    -m | --mode <simple||monitor> <path>   Choose to run once or constantly as a background process.
-  additional options:
-        -v | --verbose      Display completion statements while running
+<dl>
+  <dt> usage: <br>
+    <dd> -m | --mode <simple||monitor> <path> &nbsp;&nbsp;  Choose to run once or constantly as a background process. <br>
+  <dt> additional options: <br>
+      <dd>  -v | --verbose  &nbsp;&nbsp;    Display completion statements while running <br>
+      </dl>
   Default mode is simple and default root is ~. 
   
 ### Code Example
@@ -15,6 +17,9 @@ Run for home directory:
 
 Run for a specific directory: 
 ./aspectTagger.sh ~/SomeDir
+
+Run monitor mode on verbose:
+./aspectTagger.sh -m monitor -v
 
 Note: asptag.sh can be run by itself, but is meant more as a helper file. 
 
