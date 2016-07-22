@@ -5,22 +5,23 @@ Tag square and panoramic images to easily find Instagram photos, profile picture
 aspectTagger - A bash script to tag square and panoramic images. 
 <dl>
   <dt> usage: <br>
-    <dd> -m | --mode <simple||monitor> <path> &nbsp;&nbsp;  Choose to run once or constantly as a background process. <br>
+    <dd> -m | --mode <simple||monitor> <path> &emsp; Choose to run once or constantly as a background process. <br>
   <dt> additional options: <br>
-      <dd>  -v | --verbose  &nbsp;&nbsp;    Display completion statements while running <br>
+      <dd>  -v | --verbose  &emsp; Display completion statements while running <br>
       </dl>
   Default mode is simple and default root is ~. 
   
 ### Code Example
-Run for home directory: 
-./aspectTagger.sh 
+<dl>
+<dt>Run for home directory: <br>
+<dd>./aspectTagger.sh 
 
-Run for a specific directory: 
-./aspectTagger.sh ~/SomeDir
+<dt>Run for a specific directory: <br>
+<dd>./aspectTagger.sh ~/SomeDir
 
-Run monitor mode on verbose:
-./aspectTagger.sh -m monitor -v
-
+<dt>Run monitor mode on verbose:<br>
+<dd>./aspectTagger.sh -m monitor -v
+</dl>
 Note: asptag.sh can be run by itself, but is meant more as a helper file. 
 
 ### Motivation
@@ -32,7 +33,7 @@ Finder can filter by portrait or landscape orientation, but panoramic and square
 <li>It only works for square images.
 <li>You have to directly select the files you want to update, and there's no way to automate tag upkeep.
 </ul>
-The mdfind command allows for extremely fast metadata searches, so it makes sense to take advantage of that. The fswatch command is useful for automating this process and keeping a low profile when not in use.
+The mdfind command allows for extremely fast metadata searches, so it makes sense to take advantage of that. The fswatch command is useful for automating this process and keeping a low profile when not in use. This sort of file crawler can easily be expanded to assign new tags. 
 
 ### Installation
 <ol>
@@ -46,11 +47,17 @@ The mdfind command allows for extremely fast metadata searches, so it makes sens
 OSX Mavericks 10.9 or higher (tested on OSX Yosemite 10.10.5 and OSX Mavericks 10.9.5). 
 
 ### Performance 
-For a home directory containing 22,000 image files, 127 images were tagged in 
-real	0m13.290s
-user	0m0.127s
-sys	0m0.322s
-Subsequent runs returned times consistent with the above.
+Finding and tagging 203/22,200 images took an average time of <br>
+real &emsp; 3m44.554s <br>
+user &emsp; 0m0.121s <br>
+sys &emsp; 0m0.268s <br>
+
+Real-time results improve significantly (see below) if processes are spawned from asptag.sh, but it tends to exceed the maximum number of processes allowed (ulimit -a to see your user process cap; mine is 709). This happens for deeply-nested, large folders usually belonging to applications. If you don't have any folders like that, you can make the change recommended in the file for a much faster completion time and even run it more than once to catch a few extra files if that makes you happy. Finding and tagging an average of 126/22,200 images took an average time of <br>
+real &emsp; 0m12.614s <br>
+user &emsp; 0m0.120s <br>
+sys &emsp; 0m0.276s <br><br>
+
+There is no significant difference in user and system time, but real-time results are almost 18x faster. 
 
 ### Contact
 Please feel free to let me know of any issues or suggestions at sm_zellner@msn.com.
